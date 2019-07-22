@@ -1,0 +1,218 @@
+@charset "UTF-8" ;
+
+html {
+  font-family: 'Noto Serif JP', serif;
+}
+
+body {
+  color: #333333;
+  font-size: 62.5%;
+}
+
+/* header */
+.header-bg {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../0712HW/img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  z-index: 1;
+}
+
+.title {
+  font-size: 4rem;
+  opacity: .7;
+}
+
+.header-right {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  opacity: .3;
+}
+
+.fixed {
+  z-index: 100;
+  color: #333333;
+  font-weight: bold;
+}
+/*/ header */
+
+/* who am i */
+.title2-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.introduce-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.introduce {
+  width: 33.33%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10%;
+}
+
+.logo {
+  color: orange;
+  line-height: 3rem;
+}
+
+.titlename1 {
+  color: orange;
+  line-height: 7rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.content {
+  line-height: 3;
+}
+/*/ who am i */
+
+/* プロフィール */
+.title3-wrapper {
+  width: 100%;
+  height: 200vh;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.logo2 {
+  display: block;
+  color: orange;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 10%;
+}
+
+.titlename2 {
+  color: orange;
+  line-height: 7rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+td  {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 5;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(245, 245, 245);
+}
+
+.year {
+  text-align: right;
+}
+
+/*/ プロフィール */
+
+
+/* footer */
+footer {
+  background-color: #333333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: right;
+}
+
+.footer-right {
+  margin-right: 5%;
+}
+/* footerここまで */
+
+/* ------------------------------------
+  ここからレスポンシブ
+------------------------------------ */
+
+/* SP MediaQuery */
+@media only screen and (max-width:375px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    padding-top: 5%;
+  }
+
+  .titlename1 , .titlename2 {
+    font-size: 1rem;
+  }
+
+  .content , td , .footer-right {
+    font-size: 0.5rem;
+  }
+
+  /* who am i */
+  .title2-wrapper {
+    width: 100%;
+    height: 115vh;
+  }
+
+  .introduce-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introduce {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .titlename1 {
+    line-height: 5;
+  }
+
+  .content {
+    line-height: 2;
+    font-weight: bold;
+  }
+  /* who am i */
+
+  /* プロフィール */
+  .title3-wrapper {
+    width: 100%;
+    height: 75vh;
+  }
+  .titlename2 {
+    line-height: 5;
+  }
+
+  td {
+    font-weight: bold;
+  }
+  /*/ プロフィール */
+
+}
+/* SP MediaQuery end */
