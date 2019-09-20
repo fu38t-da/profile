@@ -16,7 +16,7 @@ body {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  background: url(../0712HW/img/bg.jpg) no-repeat center center;
+  background: url(img/bg.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
   color: #fff;
